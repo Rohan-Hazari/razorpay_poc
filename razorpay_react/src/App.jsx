@@ -122,7 +122,7 @@ function App() {
     console.log("result.data", result.data);
 
     const options = {
-      key: "rzp_test_1Ieh11Ky0lU1aJ", // Enter the Key ID generated from the Dashboard
+      key: import.meta.env.RAZORPAY_KEY_ID, // Enter the Key ID generated from the Dashboard
       subscription_id: subscription_id,
       name: "Team Shiksha.",
       description: "Test Transaction",
@@ -150,7 +150,7 @@ function App() {
       // prefill: {
       //   name: "username",
       //   email: "logoexec@gmail.com",
-      //   contact: "7506327224",
+      //   contact: "9999999999",
       // },
       notes: {
         address: "LogoExecutive",

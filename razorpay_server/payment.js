@@ -47,9 +47,11 @@ router.post("/fetch-subscription", async (req, res) => {
 router.post("/subscribe", async (req, res) => {
   const { planId } = req.body;
   const plan = plans[planId];
+  console.log(plan);
+
   try {
     const options = {
-      plan_id: plan.plan_id || "plan_P3R7nik0GFSM1m",
+      plan_id: plan.plan_id,
       total_count: 1,
     };
 
